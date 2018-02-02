@@ -68,4 +68,5 @@ SAVEHIST=1000000
 setopt auto_cd
 export TERM=xterm-256color
 export PATH=$PATH:/home/yamaguchi/tools
-
+alias gnomecc='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
+export PATH=$PATH:~/llvm-project/llvm/utils/git-svn/
