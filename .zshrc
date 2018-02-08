@@ -70,3 +70,7 @@ export TERM=xterm-256color
 export PATH=$PATH:/home/yamaguchi/tools
 alias gnomecc='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 export PATH=$PATH:~/llvm-project/llvm/utils/git-svn/
+export PATH=$PATH:~/tools/arcanist/bin/
+export PATH=$PATH:~/opt/riscv/bin/
+export RISCV=~/tools/riscv-tools/
+export EDITOR=vim
