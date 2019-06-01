@@ -71,7 +71,7 @@ NeoBundleLazy 'cookie-s/vim-unite-disas', {
             \ "depends" : [ 'osyo-manga/vim-brightest' ],
             \ }
 
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 
 NeoBundleLazy "majutsushi/tagbar", {
             \ "autoload": { "commands": ["TagbarToggle"] }}
@@ -125,9 +125,9 @@ set fileencoding=utf-8
 set fileencodings=utf-8,euc-jp,iso-2022-jp,cp932,default,latin
 set ignorecase smartcase hlsearch incsearch wrapscan
 set noshowmatch
-set tabstop=4
+set tabstop=2
 set expandtab softtabstop=0
-set smartindent cindent smarttab shiftwidth=4
+set smartindent cindent smarttab shiftwidth=2
 set cursorline
 set hidden
 set lazyredraw
@@ -332,11 +332,12 @@ endfunction
 "}}}
 
 """ syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 """ airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='luna'
+set nofoldenable

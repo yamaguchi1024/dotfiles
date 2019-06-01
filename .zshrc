@@ -54,7 +54,13 @@ alias readelfp='powerpc64le-linux-gnu-readelf'
 alias stripp='powerpc64le-linux-gnu-strip'
 alias gdbp='powerpc-linux-gdb'
 alias runp='powerpc-linux-run'
-
+alias gg='git grep'
+alias f='find . -name '
+alias m='make -j 8 '
+alias g='git '
+alias c='checkout'
+alias cpp='cherry-pick'
+alias fi='c++filt '
 
 autoload -Uz colors
 colors
@@ -71,6 +77,26 @@ export PATH=$PATH:/home/yamaguchi/tools
 alias gnomecc='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 export PATH=$PATH:~/llvm-project/llvm/utils/git-svn/
 export PATH=$PATH:~/tools/arcanist/bin/
-export PATH=$PATH:~/opt/riscv/bin/
-export RISCV=~/tools/riscv-tools/
+export PATH=$PATH:~/tools/skype/bin/
+export PATH=$PATH:~/tools/creduce/creduce
+export PATH=$PATH:~/tools/
+export PATH=$PATH:~/tools/blender/
+export PATH=$PATH:~/llvm-build/bin/
+export PATH=$PATH:~/.local/bin/
+export PATH=$PATH:~/svgpp/include/
 export EDITOR=vim
+export ROOTSYS=~/root-debug-cling
+export PYTHONPATH=~/Halide/python_bindings/bin:$ROOTSYS/lib:$PYTHONPATH
+
+PATH="/home/yuka/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/yuka/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/yuka/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/yuka/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/yuka/perl5"; export PERL_MM_OPT;
+
+export VISUAL="vim"
+export LLVM_CONFIG=/usr/bin/llvm-config
+export CLANG=/usr/bin/clang
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/halide-build/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/halide-build/lib
+export HALIDE_DISTRIB_PATH=~/halide-install
