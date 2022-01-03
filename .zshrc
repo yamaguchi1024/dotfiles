@@ -73,30 +73,16 @@ SAVEHIST=1000000
 
 setopt auto_cd
 export TERM=xterm-256color
-export PATH=$PATH:/home/yamaguchi/tools
 alias gnomecc='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
-export PATH=$PATH:~/llvm-project/llvm/utils/git-svn/
-export PATH=$PATH:~/tools/arcanist/bin/
-export PATH=$PATH:~/tools/skype/bin/
-export PATH=$PATH:~/tools/creduce/creduce
-export PATH=$PATH:~/tools/
-export PATH=$PATH:~/tools/blender/
-export PATH=$PATH:~/llvm-build/bin/
-export PATH=$PATH:~/.local/bin/
-export PATH=$PATH:~/svgpp/include/
 export EDITOR=vim
-export ROOTSYS=~/root-debug-cling
-export PYTHONPATH=~/Halide/python_bindings/bin:$ROOTSYS/lib:$PYTHONPATH
-
-PATH="/home/yuka/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/yuka/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/yuka/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/yuka/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/yuka/perl5"; export PERL_MM_OPT;
 
 export VISUAL="vim"
-export LLVM_CONFIG=/usr/bin/llvm-config
-export CLANG=/usr/bin/clang
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/halide-build/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/halide-build/lib
 export HALIDE_DISTRIB_PATH=~/halide-install
+setopt noincappendhistory
+setopt nosharehistory
+export PATH=/home/yuka/Downloads/sde-external-8.69.1-2021-07-18-lin:$PATH
+export CLANG=/usr/bin/clang-13
+set tabstop=4
+setxkbmap -layout us -option ctrl:nocaps
